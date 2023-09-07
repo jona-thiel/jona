@@ -28,5 +28,10 @@
     },
     "browserslist": [
         "defaults"
-    ]
+    ],
+    "dependencies": {
+        "autoprefixer": "^10.4.15",
+        "node": "^18.14.0",
+        "nvm": "^0.0.4"
+    }
 }
