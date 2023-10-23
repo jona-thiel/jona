@@ -1,0 +1,35 @@
+@use 'sass:color';
+
+$theme-colors: (
+    "primary": #3814ff,
+    "primary-l": color.scale(#3814ff, $lightness: 30%),
+    "primary-d": color.scale(#3814ff, $lightness: 30%),
+    "secondary": #80ffff,
+    "secondary-l": color.scale(#80ffff, $lightness: 30%),
+    "secondary-d": color.scale(#80ffff, $lightness: -30%),
+    "accent": #cad100,
+    "accent-d": color.scale(#cad100, $lightness: 30%),
+    "accent-l": color.scale(#cad100, $lightness: -30%),
+    "light": #e6e6e6,
+    "dark": #1c1c1c,
+    "dark-l": color.scale(#1c1c1c, $lightness: 30%),
+    "success": #2cff48,
+    "danger": #ff362c,
+    "warning": #ffc62c,
+);
+
+$primary: #3814ff;
+$primary-l: color.scale(#3814ff, $lightness: 30%);
+$primary-d: color.scale(#3814ff, $lightness: 30%);
+$secondary: #80ffff;
+$secondary-l: color.scale(#80ffff, $lightness: 30%);
+$secondary-d: color.scale(#80ffff, $lightness: -30%);
+$accent: #cad100;
+$accent-d: color.scale(#cad100, $lightness: 30%);
+$accent-l: color.scale(#cad100, $lightness: -30%);
+$light: #e6e6e6;
+$dark: #1c1c1c;
+$dark-l: color.scale(#1c1c1c, $lightness: 30%);
+$success: #2cff48;
+$danger: #ff362c;
+$warning: #ffc62c;
