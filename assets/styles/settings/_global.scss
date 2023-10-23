@@ -1,3 +1,32 @@
 html * {
     font-family: "Poppins", sans-serif;
 }
+
+body {
+    background-color: $dark-l;
+    color: $light;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    margin: $glob_side_padding;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: $dark;
+    border-radius: $glob_border_radius_lg;
+}
+
+a {
+    color: $primary-l;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-ll;
+    }
+}
+
+.turbo-proghress-bar {
+    background-color: $primary-l !important;
+}

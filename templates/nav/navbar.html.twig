@@ -1,0 +1,23 @@
+{#{% extends 'base.html.twig' %}#}
+
+{#{% block navbar %}#}
+    <header>
+        <nav class="c-navbar">
+            <div class="c-navbar__logo">
+                <i class="fa-solid fa-eye fa-2xl"></i>
+            </div>
+            <div class="c-navbar__items">
+                <div class="c-navbar__items__item"><a href="">API</a></div>
+                <div class="c-navbar__items__item"><a href="">Projects</a></div>
+                <div class="c-navbar__items__item"><a href="">Documentation</a></div>
+            </div>
+            <div class="c-navbar__user">
+                <a href="{{ path('app_register') }}">Sign In</a> /
+                <a href="{{ path('app_login') }}">Log In</a>
+                <div class="c-navbar__user">
+                    {{ app.user.username }}
+                </div>
+            </div>
+        </nav>
+    </header>
+{#{% endblock %}#}
