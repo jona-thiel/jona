@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block flash %}
+    {% for flash in app.flashes('success') %}
+        <div class="alert alert-success">{{ flash }}</div>
+    {% endfor %}
+    {% if not app.user.isverified %}
+        <div class="alert alert-danger">
+            <span>
+                You did not confirm your email adress. Click
+                <a href="{{ path('app_resendemailconfirmation') }}">here </a>
+                to resend confirmation email!
+            </span>
+        </div>
+    {% endif %}
+{% endblock %}
