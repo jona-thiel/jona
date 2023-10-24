@@ -60,6 +60,23 @@
             -ms-transition: width 150ms cubic-bezier(1,0,0,1);
         }
     }
+
+    &__logo {
+
+        & a {
+            color: $light;
+            filter: drop-shadow(0 0 0 $primary-l);
+            &:hover {
+                filter: drop-shadow(0 0 0.35rem $primary-l);
+                transition: filter 150ms cubic-bezier(1,0,0,1);
+                -webkit-transition: filter 150ms cubic-bezier(1,0,0,1);
+                -moz-transition: filter 150ms cubic-bezier(1,0,0,1);
+                -o-transition: filter 150ms cubic-bezier(1,0,0,1);
+                -ms-transition: filter 150ms cubic-bezier(1,0,0,1);
+            }
+        }
+
+    }
 }
 
 .c-header {
