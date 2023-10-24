@@ -1,27 +1,23 @@
-{#{% extends 'base.html.twig' %}#}
-
-{#{% block navbar %}#}
-    <header>
-        <nav class="c-navbar">
-            <div class="c-navbar__logo">
-                <i class="fa-solid fa-eye fa-2xl"></i>
-            </div>
-            <div class="c-navbar__items">
-                <div class="c-navbar__item"><a href="">API</a></div>
-                <div class="c-navbar__item"><a href="">Projects</a></div>
-                <div class="c-navbar__item"><a href="">Documentation</a></div>
-            </div>
-            <div class="c-navbar__user">
-                {% if app.user %}
-                    <div class="c-navbar__user">
-                        {{ app.user.username }}
-                    </div>
-                {% else %}
-                    <div class="c-navbar__item"><a href="{{ path('app_register') }}">Sign In</a></div>
-                    <div>&nbsp;/&nbsp;</div>
-                    <div class="c-navbar__item"><a href="{{ path('app_login') }}">Log In</a></div>
-                {% endif %}
-            </div>
-        </nav>
-    </header>
-{#{% endblock %}#}
+<header class="c-header">
+    <nav class="c-navbar">
+        <div class="c-navbar__logo">
+            <i class="fa-solid fa-eye fa-2xl"></i>
+        </div>
+        <div class="c-navbar__items">
+            <div class="c-navbar__item"><a href="">API</a></div>
+            <div class="c-navbar__item"><a href="">Projects</a></div>
+            <div class="c-navbar__item"><a href="">Documentation</a></div>
+        </div>
+        <div class="c-navbar__user">
+            {% if app.user %}
+                <div class="c-navbar__user">
+                    {{ app.user.username }}
+                </div>
+            {% else %}
+                <div class="c-navbar__item"><a href="{{ path('app_register') }}">Sign In</a></div>
+                <div class="c-navbar__item">&nbsp;/&nbsp;</div>
+                <div class="c-navbar__item"><a href="{{ path('app_login') }}">Log In</a></div>
+            {% endif %}
+        </div>
+    </nav>
+</header>

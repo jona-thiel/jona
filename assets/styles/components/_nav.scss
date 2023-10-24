@@ -4,13 +4,13 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    padding: $glob_side_padding;
+    width: 70%;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     max-height: 4.5rem;
 
-    background-color: $dark;
-    box-shadow: $primary 0 0 2rem;
+    //background-color: $dark;
+    //box-shadow: $primary 0 0 2rem;
 
     &__items {
         display: flex;
@@ -44,20 +44,28 @@
             height: 2px;
             background-color: $primary-l;
             filter: blur(0.35rem);
-            transition: width 200ms ease;
-            -webkit-transition: width 200ms ease;
-            -moz-transition: width 200ms ease;
-            -o-transition: width 200ms ease;
-            -ms-transition: width 200ms ease;
+            transition: width 200ms cubic-bezier(1,0,0,1);
+            -webkit-transition: width 200ms cubic-bezier(1,0,0,1);
+            -moz-transition: width 200ms cubic-bezier(1,0,0,1);
+            -o-transition: width 200ms cubic-bezier(1,0,0,1);
+            -ms-transition: width 200ms cubic-bezier(1,0,0,1);
         }
 
         & a:hover::after {
             width: 100%;
-            transition: width 200ms ease;
-            -webkit-transition: width 200ms ease;
-            -moz-transition: width 200ms ease;
-            -o-transition: width 200ms ease;
-            -ms-transition: width 200ms ease;
+            transition: width 150ms cubic-bezier(1,0,0,1);
+            -webkit-transition: width 150ms cubic-bezier(1,0,0,1);
+            -moz-transition: width 150ms cubic-bezier(1,0,0,1);
+            -o-transition: width 150ms cubic-bezier(1,0,0,1);
+            -ms-transition: width 150ms cubic-bezier(1,0,0,1);
         }
     }
+}
+
+.c-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $dark;
+    box-shadow: $primary 0 0 2rem;
 }

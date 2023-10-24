@@ -3,6 +3,9 @@ html * {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $dark-l;
     color: $light;
     height: 100%;
@@ -10,7 +13,7 @@ body {
 
 main {
     height: 100%;
-    margin: $glob_side_padding;
+    width: 70%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 2rem;
