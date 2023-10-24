@@ -1,0 +1,12 @@
+.c-user-form {
+    width: 30%;
+    background-color: $dark;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: $glob_border_radius_lg;
+
+    &__item {
+        margin-bottom: 1rem;
+    }
+}

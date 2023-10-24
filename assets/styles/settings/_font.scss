@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html * {
+    font-family: "Poppins", sans-serif;
+}
+
+.s-font--heading--color {
+    font-weight: 700;
+    font-style: italic;
+
+    background: linear-gradient(0.125turn, $primary-d, 25%, $accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

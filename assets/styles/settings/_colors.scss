@@ -1,27 +1,9 @@
 @use 'sass:color';
 
-$theme-colors: (
-    "primary": #3814ff,
-    "primary-l": color.scale(#3814ff, $lightness: 30%),
-    "primary-d": color.scale(#3814ff, $lightness: 30%),
-    "secondary": #80ffff,
-    "secondary-l": color.scale(#80ffff, $lightness: 30%),
-    "secondary-d": color.scale(#80ffff, $lightness: -30%),
-    "accent": #cad100,
-    "accent-d": color.scale(#cad100, $lightness: 30%),
-    "accent-l": color.scale(#cad100, $lightness: -30%),
-    "light": #e6e6e6,
-    "dark": #1c1c1c,
-    "dark-l": color.scale(#1c1c1c, $lightness: 30%),
-    "success": #2cff48,
-    "danger": #ff362c,
-    "warning": #ffc62c,
-);
 
-$primary: #3814ff;
-$primary-l: color.scale(#3814ff, $lightness: 30%);
-$primary-ll: color.scale(#3814ff, $lightness: 40%);
-$primary-d: color.scale(#3814ff, $lightness: -30%);
+$primary: color.scale(#3814ff, $lightness: 30%);
+$primary-l: color.scale(#3814ff, $lightness: 40%);
+$primary-d: #3814ff;
 $secondary: #80ffff;
 $secondary-l: color.scale(#80ffff, $lightness: 50%);
 $secondary-d: color.scale(#80ffff, $lightness: -30%);
@@ -29,9 +11,32 @@ $accent: #cad100;
 $accent-d: color.scale(#cad100, $lightness: 50%);
 $accent-l: color.scale(#cad100, $lightness: -30%);
 $light: #e6e6e6;
+$light-d: color.scale(#e6e6e6, $lightness: -2%);
 $dark: #1c1c1c;
 $dark-l: color.scale(#1c1c1c, $lightness: 2%);
 $dark-ll: color.scale(#1c1c1c, $lightness: 10%);
 $success: #2cff48;
 $danger: #ff362c;
 $warning: #ffc62c;
+
+$theme-colors: map-merge($theme-colors, (
+    "primary": $primary,
+    "primary-l": $primary-l,
+    "primary-d": $primary-d,
+    "secondary": $secondary,
+    "secondary-l": $secondary-l,
+    "secondary-d": $secondary-d,
+    "accent": $accent,
+    "accent-d": $accent-l,
+    "accent-l": $accent-d,
+    "light": $light,
+    "dark": $dark,
+    "dark-l": $dark-l,
+    "success": $success,
+    "danger": $danger,
+    "warning": $warning,
+));
+
+$
+
+@import "bootstrap";
