@@ -7,16 +7,20 @@
                 <i class="fa-solid fa-eye fa-2xl"></i>
             </div>
             <div class="c-navbar__items">
-                <div class="c-navbar__items__item"><a href="">API</a></div>
-                <div class="c-navbar__items__item"><a href="">Projects</a></div>
-                <div class="c-navbar__items__item"><a href="">Documentation</a></div>
+                <div class="c-navbar__item"><a href="">API</a></div>
+                <div class="c-navbar__item"><a href="">Projects</a></div>
+                <div class="c-navbar__item"><a href="">Documentation</a></div>
             </div>
             <div class="c-navbar__user">
-                <a href="{{ path('app_register') }}">Sign In</a> /
-                <a href="{{ path('app_login') }}">Log In</a>
-                <div class="c-navbar__user">
-                    {{ app.user.username }}
-                </div>
+                {% if app.user %}
+                    <div class="c-navbar__user">
+                        {{ app.user.username }}
+                    </div>
+                {% else %}
+                    <div class="c-navbar__item"><a href="{{ path('app_register') }}">Sign In</a></div>
+                    <div>&nbsp;/&nbsp;</div>
+                    <div class="c-navbar__item"><a href="{{ path('app_login') }}">Log In</a></div>
+                {% endif %}
             </div>
         </nav>
     </header>
