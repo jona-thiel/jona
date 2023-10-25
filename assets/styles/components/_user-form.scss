@@ -10,3 +10,13 @@
         margin-bottom: 1rem;
     }
 }
+
+.toggle-password-icon{
+    height:1.5rem;
+    width:1.5rem
+}
+.toggle-password-button{
+    color: $dark;
+    top:50%;
+    transform: translate(0, -50%)
+}

@@ -9,9 +9,6 @@
     padding-bottom: 1.5rem;
     max-height: 4.5rem;
 
-    //background-color: $dark;
-    //box-shadow: $primary 0 0 2rem;
-
     &__items {
         display: flex;
         flex-direction: row;
@@ -84,5 +81,5 @@
     justify-content: center;
     width: 100%;
     background-color: $dark;
-    box-shadow: $primary 0 0 2rem;
+    box-shadow: $primary-d 0 0 2rem;
 }

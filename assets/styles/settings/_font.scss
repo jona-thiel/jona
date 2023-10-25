@@ -7,8 +7,10 @@ html * {
 .s-font--heading--color {
     font-weight: 700;
     font-style: italic;
+    line-height: normal;
+    display: inline-block;
 
-    background: linear-gradient(0.125turn, $primary-d, 25%, $accent);
+    background: linear-gradient(0.125turn, $primary-d, $accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
