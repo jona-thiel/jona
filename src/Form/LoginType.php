@@ -14,24 +14,23 @@ class LoginType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('username', TextType::class, [
+            ->add('_username', TextType::class, [
                 'required' => true,
             ])
-            ->add('password', TogglePasswordType::class, [
-//                'toggle' => true,
-//                'visible_label' => '',
-//                'hidden_label' => '',
-//                'visible_icon' => '<i class="fa-regular fa-eye"></i>',
-//                'hidden_icon' => '<i class="fa-regular fa-eye-slash"></i>',
-//                'required' => true,
-            ])
+            ->add('_password', TogglePasswordType::class)
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            // Configure your form options here
+            'csrf_field_name' => '_csrf_token',
+            'csrf_token_id' => 'authenticate',
         ]);
+    }
+
+    public function getBlockPrefix(): string
+    {
+        return '';
     }
 }
