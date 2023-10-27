@@ -16,6 +16,9 @@ class TogglePasswordType extends AbstractType
             'hidden_label' => '',
             'visible_icon' => '<i class="fa-regular fa-eye"></i>',
             'hidden_icon' => '<i class="fa-regular fa-eye-slash"></i>',
+            'attr' => [
+                'class' => 'pe-5',
+            ],
             'required' => true,
         ]);
     }
